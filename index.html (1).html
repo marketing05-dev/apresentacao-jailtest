@@ -161,10 +161,7 @@
             padding: 4px 12px;
             border-radius: 20px;
         }
-<div class="action-card" onclick="window.open('./marcas/', '_blank')">
-    <div class="huge-number">242</div>
-    <h3 data-i18n="lbl-marcas">Marcas</h3>
-    ...
+
         .dot-wrapper:hover .dot-label, .dot-wrapper.active .dot-label {
             opacity: 1;
             transform: translateX(0);
@@ -579,10 +576,10 @@
                 </div>
 
                 <div class="circles-row">
-                    <div class="circle-item" onclick="window.open('./jaltest-diag/', '_blank')">
-    <div class="circle-shape"><i class="fa-solid fa-laptop-code"></i></div>
-    <div class="circle-label">Jaltest Diag</div>
-</div>
+                    <div class="circle-item" onclick="openModal('info-jdiag')">
+                        <div class="circle-shape"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="circle-label">Jaltest Diag</div>
+                    </div>
                     <div class="circle-item" onclick="openModal('info-cobertura')">
                         <div class="circle-shape"><i class="fa-solid fa-truck-matrix">🔌</i></div>
                         <div class="circle-label" data-i18n="c-cob">Cobertura</div>
@@ -640,7 +637,7 @@
             <div class="modal-content" style="max-height: 550px; overflow-y: auto;">
                 <i class="fa-solid fa-xmark close-btn" onclick="closeModal('mod-modelos')"></i>
                 <h3 style="color: var(--blue-brand); font-family: Orbitron; font-size: 26px; margin-bottom: 15px;" data-i18n="m-modelos-t">6.930 Modelos Catalogados</h3>
-                <p style="color: #cbd5e1; font-size: 15px; line-height: 1.7;" data-i18n="m-modelos-p">Chega de perder ordens de serviço. Coloque 6.930 modelos de veículos dentro da sua oficina hoje!<br><br>Cada vez que um caminhão ou van sai da sua oficina porque o seu scanner atual não faz a leitura, o seu dinheiro vai embora junto com ele. No mercado de veículos comerciais, tempo de pátio parado é prejuízo.<br><br>Com o Jaltest, você elimina esse problema de uma vez por todas. São 6.930 modelos de veículos cobertos em um único equipamento. Você passa a diagnosticar, calibrar e parametrizar as principais marcas do mercado com a velocidade que o seu cliente exige e a precisão que o seu mecânico precisa.<br><br>Não compre apenas um scanner, invista na ferramenta que vai aumentar o faturamento do seu negócio desde o primeiro dia.<br><br>Garanta o seu Jaltest com quem entende do assunto!<br>Acesse agora o nosso site, fale com um de nossos consultores especializados e descubra as condições exclusivas de financiamento e suporte que preparamos para você.<br>👉 Clique aqui e turbine sua oficina: <a href='./modelos/' target='_blank' style='color:var(--blue-brand); text-decoration:underline;'>Ver Modelos</a>
+                <p style="color: #cbd5e1; font-size: 15px; line-height: 1.7;" data-i18n="m-modelos-p">Chega de perder ordens de serviço. Coloque 6.930 modelos de veículos dentro da sua oficina hoje!<br><br>Cada vez que um caminhão ou van sai da sua oficina porque o seu scanner atual não faz a leitura, o seu dinheiro vai embora junto com ele. No mercado de veículos comerciais, tempo de pátio parado é prejuízo.<br><br>Com o Jaltest, você elimina esse problema de uma vez por todas. São 6.930 modelos de veículos cobertos em um único equipamento. Você passa a diagnosticar, calibrar e parametrizar as principais marcas do mercado com a velocidade que o seu cliente exige e a precisão que o seu mecânico precisa.<br><br>Não compre apenas um scanner, invista na ferramenta que vai aumentar o faturamento do seu negócio desde o primeiro dia.<br><br>Garanta o seu Jaltest com quem entende do assunto!<br>Acesse agora o nosso site, fale com um de nossos consultores especializados e descubra as condições exclusivas de financiamento e suporte que preparamos para você.<br>👉 Clique aqui e turbine sua oficina: <a href='https://pabu.com.br' target='_blank' style='color:var(--blue-brand); text-decoration:underline;'>pabu.com.br</a></p>
             </div>
         </div>
 
@@ -865,7 +862,7 @@
                 "s5-p": "A engenharia Cojali integrada para entregar a máxima performance operacional na oficina.",
                 "c-cob": "Cobertura", "c-ser": "Servicios",
                 "m-marcas-t": "242 Marcas Globais", "m-marcas-p": "Amplo ecossistema que cobre as principais marcas americanas, europeias e asiáticas do setor de transporte de cargas, ônibus e vans.",
-                "m-modelos-t": "6.930 Modelos Catalogados", "m-modelos-p": "Chega de perder ordens de serviço. Coloque 6.930 modelos de veículos dentro da sua oficina hoje!<br><br>Cada vez que um caminhão ou van sai da sua oficina porque o seu scanner atual não faz a leitura, o seu dinheiro vai embora junto com ele. No mercado de veículos comerciais, tempo de pátio parado é prejuízo.<br><br>Com o Jaltest, você elimina esse problema de uma vez por todas. São 6.930 modelos de veículos cobertos em um único equipamento. Você passa a diagnosticar, calibrar e parametrizar as principais marcas do mercado com a velocidade que o seu cliente exige e a precisão que o seu mecânico precisa.<br><br>Não compre apenas um scanner, invista na ferramenta que vai aumentar o faturamento do seu negócio desde o primeiro dia.<br><br>Garanta o seu Jaltest com quem entende do assunto!<br>Acesse agora o nosso site, fale com um de nossos consultores especializados e descubra as condições exclusivas de financiamento e suporte que preparamos para você.<br>👉 Clique aqui e turbine sua oficina: <a href='./modelos/' target='_blank' style='color:var(--blue-brand); text-decoration:underline;'>Ver Modelos</a>
+                "m-modelos-t": "6.930 Modelos Catalogados", "m-modelos-p": "Chega de perder ordens de serviço. Coloque 6.930 modelos de veículos dentro da sua oficina hoje!<br><br>Cada vez que um caminhão ou van sai da sua oficina porque o seu scanner atual não faz a leitura, o seu dinheiro vai embora junto com ele. No mercado de veículos comerciais, tempo de pátio parado é prejuízo.<br><br>Com o Jaltest, você elimina esse problema de uma vez por todas. São 6.930 modelos de veículos cobertos em um único equipamento. Você passa a diagnosticar, calibrar e parametrizar as principais marcas do mercado com a velocidade que o seu cliente exige e a precisão que o seu mecânico precisa.<br><br>Não compre apenas um scanner, invista na ferramenta que vai aumentar o faturamento do seu negócio desde o primeiro dia.<br><br>Garanta o seu Jaltest com quem entende do assunto!<br>Acesse agora o nosso site, fale com um de nossos consultores especializados e descubra as condições exclusivas de financiamento e suporte que preparamos para você.<br>👉 Clique aqui e turbine sua oficina: <a href='https://pabu.com.br' target='_blank' style='color:var(--blue-brand); text-decoration:underline;'>pabu.com.br</a>",
                 "m-sistemas-t": "61.302 Sistemas Eletrônicos", "m-sistemas-p": "Varredura profunda e calibrações em transmissões automatizadas, módulos de injeção de motor, sistemas de freio ABS/EBS, suspensões pneumáticas e sistemas de pós-tratamento Arla32.",
                 "m-info-t": "39.554 Dados de Informação Técnica", "m-info-p": "Acesso direto a tabelas de torque, especificações de componentes mecânicos, procedimentos passo a passo para testes dinâmicos guiados e valores de referência padrão.",
                 "m-esquemas-t": "50.211 Esquemas Elétricos", "m-esquemas-p": "Diagramação inteligente de chicotes elétricos com links diretos para a verificação de sensores, continuidades de linhas de comunicação CAN-Bus e localização de componentes físicos no veículo.",
